@@ -21,6 +21,7 @@ useEffect(() => {
 return ( 
     <div>
         <h1>{book.Title}</h1>
+        <h2>{book.Author}</h2>
     </div>
 )}
 
