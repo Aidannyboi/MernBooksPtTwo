@@ -17,15 +17,15 @@ const Home = () => {
 
     return (
             books.map((book, index) =>(
-                <div>
-                    <div>
-                        <h1>{book.Title}</h1>
-                        <h2>{book.Author}</h2>
-                        <p>{book.Pages}</p>
-                        <h2>Is this book avaliable?</h2>
-                        <h3>{book.isAvaliable? "Yes" : "No"}</h3>
+
+                    <div className="mainBorder">
+                        <h1 className="mainText">{book.Title}</h1>
+                        <h2 className="mainText">{book.Author}</h2>
+                        <p className="mainText">{book.Pages}</p>
+                        <h2 className="mainText">Is this book avaliable?</h2>
+                        <h3 className="mainText">{book.isAvaliable? "Yes" : "No"}</h3>
                     </div>
-                </div>
+
             ))
     )
 }
