@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios"
+import { Link } from "react-router-dom";
 
 const Home = () => {
     const [books, setBooks] = useState([]);
@@ -24,6 +25,7 @@ const Home = () => {
                         <p className="mainText">{book.Pages}</p>
                         <h2 className="mainText">Is this book avaliable?</h2>
                         <h3 className="mainText">{book.isAvaliable? "Yes" : "No"}</h3>
+                        <Link to={'/book/'+ book._id +'/details'}> View {book.title} </Link>
                     </div>
 
             ))

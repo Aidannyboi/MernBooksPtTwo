@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import {BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './views/home'
+import ViewBook from './components/bookDetail'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/book/:id/details' element={<ViewBook/>}/>
         </Routes>
       </BrowserRouter>
     </>
