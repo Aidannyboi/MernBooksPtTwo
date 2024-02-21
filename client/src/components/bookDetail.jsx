@@ -28,8 +28,10 @@ useEffect(() => {
 
 return ( 
     <div>
-        <h1>{book.Title}</h1>
-        <h2>{book.Author}</h2>
+        <h1>Books Name: {book.Title}</h1>
+        <h2>Authors Name: {book.Author}</h2>
+        <h3>Pages: {book.Pages}</h3>
+        <h3>{book.isAvaliable? "This Book is Avaliable!" : "This Book is not Avaliable."}</h3>
         <button className="view" onClick={DeleteBook}>Delete Book?</button>
     </div>
 )}
