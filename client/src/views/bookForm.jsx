@@ -64,7 +64,6 @@ const BookForm = () => {
             setPagesError("")
         }
     }
-\
     const handleAvaliable = (e) => {
         console.log(e.target.checked)
         setIsAvaliable(e.target.checked)
