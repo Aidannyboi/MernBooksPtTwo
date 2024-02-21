@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+
   font-weight: 400;
 
   color-scheme: light dark;
@@ -70,6 +70,8 @@ button:focus-visible {
 .mainBorder {
   background-color: yellow;
   border-radius: 25px;
+  width: 500px;
+  margin-left: 10px;
 }
 
 .mainText{
@@ -85,4 +87,31 @@ button:focus-visible {
 .formSpacing{
   width: 500px;
   height: 750px;
+}
+
+.view{
+  column-rule: #1a1a1a;
+  background-color: gray;
+  height: 50px;
+  width: 100px;
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.buttonRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headerButtons{
+  column-rule: #1a1a1a;
+  background-color: gray;
+  height: 50px;
+  width: 100px;
+  font-size: small;
+}
+
+.marginIssue{
+  margin-top: 0px;
 }

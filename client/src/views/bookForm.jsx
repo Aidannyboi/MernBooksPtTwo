@@ -1,7 +1,7 @@
 import { useState } from "react"
 import axios from "axios";
 
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const BookForm = () => {
@@ -16,6 +16,8 @@ const BookForm = () => {
     const [pagesError, setPagesError] = useState("");
 
     const [isAvaliable, setIsAvaliable] = useState(false);
+
+    const navigate = useNavigate();
 
 
     const handleTitle = (e) => {
@@ -80,7 +82,7 @@ const BookForm = () => {
         .then(res => {
             console.log(res);
             console.log(res.data);
-            Navigate("/")
+            navigate("/")
         })
     }
     return (

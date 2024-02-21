@@ -20,12 +20,16 @@ const Home = () => {
             books.map((book, index) =>(
 
                     <div className="mainBorder">
-                        <h1 className="mainText">{book.Title}</h1>
-                        <h2 className="mainText">{book.Author}</h2>
-                        <p className="mainText">{book.Pages}</p>
+                        <h1 className="mainText">Name: {book.Title}</h1>
+                        <h2 className="mainText">Author: {book.Author}</h2>
+                        <p className="mainText">Pages: {book.Pages}</p>
                         <h2 className="mainText">Is this book avaliable?</h2>
                         <h3 className="mainText">{book.isAvaliable? "Yes" : "No"}</h3>
-                        <Link to={'/book/'+ book._id +'/details'}> View {book.title} </Link>
+                        <div className="buttonRow">
+                            <a href={'/book/'+ book._id +'/details'}>
+                                <button className="view"> View Book! </button>
+                            </a>
+                        </div>
                     </div>
                     
             ))
