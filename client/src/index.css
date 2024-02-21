@@ -75,3 +75,14 @@ button:focus-visible {
 .mainText{
   color: black;
 }
+
+.formDetail{
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+}
+
+.formSpacing{
+  width: 500px;
+  height: 750px;
+}

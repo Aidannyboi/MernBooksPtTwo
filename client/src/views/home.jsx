@@ -27,7 +27,7 @@ const Home = () => {
                         <h3 className="mainText">{book.isAvaliable? "Yes" : "No"}</h3>
                         <Link to={'/book/'+ book._id +'/details'}> View {book.title} </Link>
                     </div>
-
+                    
             ))
     )
 }
