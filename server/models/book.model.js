@@ -19,7 +19,7 @@ const BookSchema = new Schema (
 
             minlength: [2, "The authors name must have at least 5 characters!"],
 
-            manlength: [255, "The authors name must be less than 255 characters!"]
+            maxlength: [255, "The authors name must be less than 255 characters!"]
         },
 
         Pages : {
@@ -27,7 +27,7 @@ const BookSchema = new Schema (
 
             required: [true, "A book obviously has to have pages!"],
 
-            minlength: [1, "A book has to have at least one page!"]
+            min: [1, "A book has to have at least one page!"]
         },
 
         isAvaliable : {

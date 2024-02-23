@@ -45,7 +45,7 @@ async function updateOneBook (req, res) {
     try {
         const updatedBook = await Book.findByIdAndUpdate(req.params.id, req.body, options);
         res.json(updatedBook);
-    } catch {
+    } catch(error) {
         res.status(400).json(error);
     }
 }

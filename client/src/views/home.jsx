@@ -29,6 +29,7 @@ const Home = () => {
                             <a href={'/book/'+ book._id +'/details'}>
                                 <button className="view"> View Book! </button>
                             </a>
+                            <Link to={'/book/'+ book._id + '/update'}> <button className="view">Update Book!</button></Link>
                         </div>
                     </div>
                     
