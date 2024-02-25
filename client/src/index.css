@@ -110,8 +110,21 @@ button:focus-visible {
   height: 50px;
   width: 100px;
   font-size: small;
+  margin-top: 10px;
 }
 
-.marginIssue{
-  margin-top: 0px;
+
+.header{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.topPage{
+  display: flex;
+  justify-content: space-around;
+}
+
+.error{
+  color: red;
 }

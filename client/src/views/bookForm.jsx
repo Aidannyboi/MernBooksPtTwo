@@ -90,15 +90,15 @@ const BookForm = () => {
             <form onSubmit={SubmitHandler} className="formDetail">
 
                 <label>Title:</label>
-                <p>{titleError}</p>
+                <p className="error">{titleError}</p>
                 <input type="text" onChange={handleTitle} value={Title}/>
 
                 <label>Author:</label>
-                <p>{authorError}</p>
+                <p className="error">{authorError}</p>
                 <input type="text" onChange={handleAuthor} value={Author}/>
 
                 <label>Pages:</label>
-                <p>{pagesError}</p>
+                <p className="error">{pagesError}</p>
                 <input type="number" onChange={handlePages} value={Pages}/>
 
                 <label>Is it avaliable?</label>
